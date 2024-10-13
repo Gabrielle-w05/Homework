@@ -1,0 +1,56 @@
+#Top {
+  color:   #54c1ef;
+  background-color: #a0d8ee;
+margin: 10px;
+border: 5px;
+padding: 10px;
+}
+
+body {
+  background-color: #d4f5fd;
+  margin: 10px;
+border: 5px;
+padding: 10px;
+}
+
+.interests {
+  color: #54c1ef;
+  margin: 10px;
+border: 5px;
+padding: 10px;
+}
+
+li:hover {
+  color: red
+}
+
+a:active {
+  color: #d4f5fd;
+}
+a:visited {
+  color: royalblue;
+}
+a:hover {
+  color: red;
+}
+
+.Facts {
+  color: #54c1ef;
+  margin: 10px;
+border: 5px;
+padding: 10px;
+}
+
+footer, .foot {
+  background-color: #a0d8ee;
+  color: #54c1ef;
+  margin: 10px;
+border: 5px;
+padding: 10px;
+}
+
+h1, h3 {
+  color: #54c1ef;
+  font-family: fantasy;
+}
+
