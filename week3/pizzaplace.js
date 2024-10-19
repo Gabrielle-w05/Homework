@@ -1,18 +1,6 @@
-// const pizzaToppings = ["Pepperoni", "Cheese", "Bacon", "Mushroom"];
-// let pizzaPlace = "Gabby's Pizza";
-// for (let i = 0; i < pizzaToppings.length; i++) {
-//   console.log(pizzaToppings[i]);
-//   const pizzaPlace = "Gabby's Pizza";
-//   console.log(
-//     `"Welcome to " ` + [pizzaPlace]`"Where we have "`[pizzaToppings][i]
-//   );
-// }
-
 let pizzaToppings = ["Pepperoni", "Cheese", "Bacon", "Mushroom"];
-// for (let topping of pizzaToppings) {
-//   console.log("We offer " + topping);
-// }
 let pizzaPlace = "Gabby's Pizza";
+
 function greetCustomer(toppingsArr) {
   console.log(`Welcome to   ${pizzaPlace}!`);
   for (let topping of toppingsArr) {
@@ -47,31 +35,9 @@ function preparePizza([size, crust, toppings]) {
 let pizza = preparePizza(pizzaOrder);
 console.log(pizza);
 
-// let yumPizza = ["pepperoni", "cheese", "bacon"];
-// function servePizza(orderArr) {
-//   for (let eatPizza of orderArr) {
-//     console.log(
-//       `Order up! Here's your large thick crust pizza with ${yumPizza}. Enjoy!`
-//     );
-//   }
-// }
-// servePizza(yumPizza);
-let yumPizza = ["pepperoni", "cheese", "bacon"];
-function servePizza() {
-  for (let key in yumPizza) {
-    console.log(
-      `Order up! Here's your large thick crust pizza with yumPizza.${key} = ${yumPizza[key]}`
-    );
-  }
+function servePizza(pizza) {
+  console.log(
+    `Order up! Here is your ${pizza.size} ${pizza.crust} pizza with ${pizza.toppings}. Enjoy!`
+  );
 }
-servePizza();
-
-function returnFunction() {
-  return preparePizza;
-}
-returnFunction();
-
-function returnFunction2() {
-  return servePizza();
-}
-returnFunction2();
+servePizza(pizza);
